@@ -1,6 +1,8 @@
 # Running Repo #
 git clone https://github.com/TheyCallMeRyan/SearizenTechChallenge.git
 
+There's a file RobloxProjectTemplate.rbxl if you don't want to compile it yourself. If you do follow the below:
+
 cd SearizenTechChallenge
 
 pesde install
