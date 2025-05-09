@@ -17,6 +17,8 @@ local world = observers_add(jecs.World.new())
 SYSTEM(world, systems.replication)
 SYSTEM(world, systems.init_replication)
 SYSTEM(world, systems.players_added)
+SYSTEM(world, systems.characters_added)
+SYSTEM(world, systems.init_stances)
 RUN(world)
 
 return world

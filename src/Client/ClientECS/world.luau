@@ -16,6 +16,12 @@ local client_ecs = script.Parent
 local systems = client_ecs.systems
 
 SYSTEM(world, systems.receive_replication)
+SYSTEM(world, systems.tag_local_player)
+SYSTEM(world, systems.remove_cooldowns)
+SYSTEM(world, systems.player_input)
+SYSTEM(world, systems.stance_activated)
+SYSTEM(world, systems.animate_stance)
+SYSTEM(world, systems.punch_activated)
 RUN(world)
 
 return world
