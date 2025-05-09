@@ -1,0 +1,41 @@
+name = "theycallmeryan/jecs_testing"
+version = "0.1.0"
+description = "Testing jecs"
+authors = ["TheyCallMeRyan"]
+repository = "https://github.com/TheyCallMeRyan/JECS-Testing"
+
+[engines]
+lune = "^0.8.9"
+
+[target]
+environment = "roblox"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
+stylua = { name = "pesde/stylua", version = "^2.1.0" , target = "lune" }
+luau_lsp = { name = "pesde/luau_lsp", version = "^1.44.1", target = "lune" }
+selene = { name = "pesde/selene", version = "^0.28.0", target = "lune" }
+darklua = { name = "pesde/darklua", version = "^0.16.0", target = "lune" }
+
+[dependencies]
+# feces = { name = "killergg/feces", version = "^1.1.2" }
+jabby = { wally = "alicesaidhi/jabby", version = "^0.2.2", target = "luau" }
+# jecs = { wally = "ukendio/jecs", version = "^0.5.5" }
+# jecs-utils = { wally = "mark-marks/jecs-utils", version = "^0.1.7-rc.1" }
+jecs = { name = "marked/jecs_nightly", version = "^0.5.5-nightly.20250429T001100Z", target = "luau" }
+hammer = { name = "marked/hammer", version = "^0.2.0", target = "luau" }
+
+[overrides]
+"hammer>jecs" = "jecs"
+"jabby>jecs" = "jecs"

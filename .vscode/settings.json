@@ -1,0 +1,8 @@
+{
+  "stylua.targetReleaseVersion": "latest",
+  "luau-lsp.platform.type": "roblox",
+  "luau-lsp.completion.imports.suggestRequires": true,
+  "luau-lsp.completion.imports.stringRequires.enabled": true,
+  "luau-lsp.completion.imports.suggestServices": true,
+  "luau-lsp.completion.imports.requireStyle": "auto"
+}

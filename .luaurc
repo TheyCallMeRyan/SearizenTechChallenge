@@ -1,0 +1,13 @@
+{
+    "aliases":{
+        "ecs": "src/Common/ecs",
+        "ServerECS": "src/Server/ServerECS",
+        "ClientECS": "src/Client/ClientECS",
+        "roblox_packages": "roblox_packages/",
+        "luau_packages": "luau_packages/",
+        "Client": "src/Client/",
+        "Common": "src/Common/",
+        "Server": "src/Server/"
+    },
+    "languageMode": "strict"
+}

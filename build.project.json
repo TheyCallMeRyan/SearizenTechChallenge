@@ -1,0 +1,82 @@
+{
+  "name": "JECS-Testing",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Common": {
+        "$path": "dist/Common"
+      },
+      "roblox_packages": {
+        "$path": "roblox_packages"
+      },
+      "luau_packages": {
+        "$path": "luau_packages"
+      },
+      "Assets": {
+        "$path": "Assets"
+      },
+      "Client": {
+        "$path": "dist/Client"
+      }
+    },
+
+    "ServerScriptService": {
+      "$path": "dist/Server"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "ClientInit": {
+          "$path": "dist/ClientInit"
+        }
+      }
+    },
+
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.38823,
+            0.37254,
+            0.38823
+          ],
+          "Locked": true,
+          "Position": [
+            0,
+            -10,
+            0
+          ],
+          "Size": [
+            512,
+            20,
+            512
+          ]
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
